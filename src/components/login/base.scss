@@ -1,0 +1,135 @@
+* {
+  color: #333333;
+  font-family: '宋体';
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  width: 100%;
+  color: #000000;
+  /*	background:url(../assets/img/login-background.jpg) no-repeat;*/
+  background: url(../assets/img/body_bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+.inputForm {
+  width: 360px;
+  height: 260px;
+  position: fixed;
+  left: calc(50% - 180px);
+  top: 250px;
+  background-color: rgba(245, 245, 245, 0.2);
+  opacity: 0.9;
+  border: 1px solid white;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.inputForm .login_h4 {
+  width: 100%;
+  height: 15px;
+  /*   color: #007DDB;*/
+  color: white;
+  margin: 15px 0 0 25px;
+  text-align: left;
+}
+
+.inputForm p {
+  /*	color: #007DDB ;*/
+  color: white;
+  text-align: left;
+  margin: 15px 0 0 25px;
+  font-size: 12px;
+
+}
+
+.inputForm input {
+  width: 298px;
+  height: 34px;
+  margin-top: 15px;
+  background-color: white;
+  text-indent: 5px;
+  border: transparent;
+  font-size: 14px;
+}
+
+.username {
+  margin-left: 8px;
+  background: url(../assets/img/user.png) no-repeat center right 5%;
+}
+
+.password {
+  margin-left: 8px;
+  background: url(../assets/img/locked.png) no-repeat center right 5%
+}
+
+.submit {
+  background-color: #007DDB !important;
+  color: white;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 2px;
+  margin-left: 9px;
+}
+
+.result {
+  width: 204px;
+  height: 48px;
+  background-color: rgba(123, 123, 123, 0.8);
+  position: fixed;
+  left: calc(50% - 102px);
+  top: 550px;
+  display: none;
+}
+
+.result p {
+  line-height: 48px;
+  color: white;
+  text-align: center;
+}
+
+.remind {
+  width: 120px;
+  height: 34px;
+  background-color: orange;
+  margin-top: 10px;
+  line-height: 34px;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  /*display: none;*/
+}
+
+.remind_a {
+  position: absolute;
+  top: 90px;
+  left: 288px;
+}
+
+.remind_b {
+  position: absolute;
+  top: 140px;
+  left: 288px;
+}
+
+i {
+  width: 0;
+  height: 0;
+  border-width: 0 5px 5px;
+  border-style: solid;
+  border-color: transparent transparent orange; /*透明 透明  灰*/
+  margin: 40px auto;
+  position: absolute;
+  top: -44px;
+  left: 20px;
+}
+
+.bgCanvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
