@@ -101,6 +101,16 @@ module.exports = {
     // initialization, it doesn't blow up the WebpackDevServer client, and
     // changing JS code would still trigger a refresh.
   ],
+    devServer: {
+        proxy: {
+            "/rest": {
+                "target": "http://192.168.9.109:12005",
+                "changeOrigin": true,
+                "secure": false
+            }
+        },
+
+    },
   output: {
     // Add /* filename */ comments to generated require()s in the output.
     pathinfo: true,
@@ -160,7 +170,7 @@ module.exports = {
       // To fix this, we prevent you from importing files out of src/ -- if you'd like to,
       // please link the files into your node_modules/ and let module-resolution kick in.
       // Make sure your source files are compiled, as they will not be processed in any way.
-      new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
+      //new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
     ],
   },
   resolveLoader: {
@@ -189,6 +199,7 @@ module.exports = {
               
             },
             loader: require.resolve('eslint-loader'),
+
           },
         ],
         include: paths.appSrc,
@@ -343,7 +354,6 @@ module.exports = {
     }),
     // Makes some environment variables available in index.html.
     // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
-    // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     // In development, this will be an empty string.
     new InterpolateHtmlPlugin(HtmlWebpackPlugin, env.raw),
     // This gives some necessary context to module not found errors, such as

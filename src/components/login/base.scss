@@ -1,15 +1,15 @@
 * {
   color: #333333;
-  font-family: '宋体';
   margin: 0;
   padding: 0;
 }
 
 .login {
   width: 100%;
+  height:100%;
   color: #000000;
   /*	background:url(../assets/img/login-background.jpg) no-repeat;*/
-  background: url(../assets/img/body_bg.jpg) no-repeat;
+  background: url(../../../static/img/body_bg.jpg) no-repeat;
   background-size: 100% 100%;
   margin: 0;
 }
@@ -18,13 +18,14 @@
   width: 360px;
   height: 260px;
   position: fixed;
-  left: calc(50% - 180px);
-  top: 250px;
+  left:50%;
+  top:50%;
+  margin-left: -180px;
+  margin-top: -130px;
   background-color: rgba(245, 245, 245, 0.2);
   opacity: 0.9;
   border: 1px solid white;
   text-align: center;
-  position: relative;
   z-index: 2;
 }
 
@@ -58,12 +59,12 @@
 
 .username {
   margin-left: 8px;
-  background: url(../assets/img/user.png) no-repeat center right 5%;
+  background: url(../../../static/img/user.png) no-repeat center right 5%;
 }
 
 .password {
   margin-left: 8px;
-  background: url(../assets/img/locked.png) no-repeat center right 5%
+  background: url(../../../static/img/locked.png) no-repeat center right 5%
 }
 
 .submit {

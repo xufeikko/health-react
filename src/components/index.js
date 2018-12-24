@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class Xxx extends Component {
+export default class Index extends Component {
     getInitialState() {
         return {}
     }
@@ -16,15 +16,13 @@ export default class Xxx extends Component {
 
     }
 
-    handleChange = (event) => {
-        this.setState({
-            msg: event.target.value;
-    })
-    }
+
 
     render() {
         return (
-            <div></div>
+            <div>
+                <p>ss</p>
+            </div>
         )
     }
 }
