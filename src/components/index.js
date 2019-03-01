@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-
+import { Button,Layout} from 'element-react';
+import Head from './commomn/head'
 export default class Index extends Component {
     getInitialState() {
         return {}
@@ -21,8 +22,13 @@ export default class Index extends Component {
     render() {
         return (
             <div>
-                <p>ss</p>
+                <Layout.Row>
+                    <Layout.Col span="24">
+                        <Head />
+                    </Layout.Col>
+                </Layout.Row>
             </div>
-        )
+
+    )
     }
 }

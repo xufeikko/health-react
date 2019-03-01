@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import "./base.scss"
+import "../../../static/css/base.scss"
 import BgCanvas from './bgCanvas'
 import {withRouter} from "react-router-dom";
 import axios from 'axios'

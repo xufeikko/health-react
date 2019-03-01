@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import RouterList from './router'
-import Login from './components/login/login';
+import RouterList from './router';
+import 'element-theme-default';
 import * as serviceWorker from './serviceWorker';
 
 
