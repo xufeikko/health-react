@@ -1,21 +1,21 @@
 /*
 Error: Invalid GBK character "\xE9"
-        on line 122 of base.scss
+        on line 140 of base.scss
 
-117: i {
-118:   width: 0;
-119:   height: 0;
-120:   border-width: 0 5px 5px;
-121:   border-style: solid;
-122:   border-color: transparent transparent orange; /*透明 透明  灰*\/
-123:   margin: 40px auto;
-124:   position: absolute;
-125:   top: -44px;
-126:   left: 20px;
-127: }
+135:   position: fixed;
+136:   left: 0;
+137:   top: 0;
+138:   z-index: 0;
+139: }
+140: //首页 top
+141: .header{
+142:   width: 100%;
+143:   height: 60px;
+144:   background:linear-gradient(#0c4a80,#336795,#0c4a80);
+145:   color: #ffffff;
 
 Backtrace:
-base.scss:122
+base.scss:140
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/util.rb:1090:in `rescue in block in find_encoding_error'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/util.rb:1087:in `block in find_encoding_error'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/util.rb:1086:in `each'
@@ -42,4 +42,4 @@ C:/Ruby25-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid GBK character \"\xE9\"\A         on line 122 of base.scss\A \A 117: i {\A 118:   width: 0;\A 119:   height: 0;\A 120:   border-width: 0 5px 5px;\A 121:   border-style: solid;\A 122:   border-color: transparent transparent orange; /*透明 透明  灰*/\A 123:   margin: 40px auto;\A 124:   position: absolute;\A 125:   top: -44px;\A 126:   left: 20px;\A 127: }"; }
+  content: "Error: Invalid GBK character \"\xE9\"\A         on line 140 of base.scss\A \A 135:   position: fixed;\A 136:   left: 0;\A 137:   top: 0;\A 138:   z-index: 0;\A 139: }\A 140: //首页 top\A 141: .header{\A 142:   width: 100%;\A 143:   height: 60px;\A 144:   background:linear-gradient(#0c4a80,#336795,#0c4a80);\A 145:   color: #ffffff;"; }

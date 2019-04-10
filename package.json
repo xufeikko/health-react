@@ -128,5 +128,10 @@
     "http-proxy-middleware": "^0.19.1",
     "sass-resources-loader": "^2.0.0"
   },
-  "proxy": "http://192.168.9.109:12005"
+  "proxy": {
+    "/rest":{
+      "target":"http://192.168.9.109:12005",
+      "changeOrigin":true
+    }
+  }
 }
